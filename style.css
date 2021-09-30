@@ -1,27 +1,43 @@
+body {
+
+}
+
+.randball {
+    position: relative;
+    background: linear-gradient(45deg, #75eaff, #36b475);
+}
+
 .one {
+    position: absolute;
     color: red;
 }
 
 .two {
+    position: absolute;
     color: orange;
 }
 
 .three {
+    position: absolute;
     color: yellow;
 }
 
 .four {
+    position: absolute;
     color: green;
 }
 
 .five {
+    position: absolute;
     color: rgb(0, 217, 255);
 }
 
 .six {
+    position: absolute;
     color: rgb(47, 0, 255);
 }
 
 .sever {
+    position: absolute;
     color: rgb(174, 0, 255);
 }
