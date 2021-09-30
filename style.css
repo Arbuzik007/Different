@@ -1,43 +1,57 @@
 body {
-
+    background: linear-gradient(45deg, #75eaff, #36b475);
 }
+
 
 .randball {
     position: relative;
-    background: linear-gradient(45deg, #75eaff, #36b475);
-}
+}    
 
 .one {
     position: absolute;
     color: red;
+    top: 20px;
+    left: 20px;
 }
 
 .two {
     position: absolute;
     color: orange;
+    top: 30px;
+    left: 40px;
 }
 
 .three {
     position: absolute;
     color: yellow;
+    top: 40px;
+    left: 80px;
 }
 
 .four {
     position: absolute;
     color: green;
+    top: 0px;
+    left: 20px;
 }
 
 .five {
     position: absolute;
     color: rgb(0, 217, 255);
+    top: 200px;
+    left: 20px;
 }
 
 .six {
     position: absolute;
     color: rgb(47, 0, 255);
+    top: 200px;
+    left: 20px;
 }
 
 .sever {
     position: absolute;
     color: rgb(174, 0, 255);
+    top: 200px;
+    left: 20px;
 }
