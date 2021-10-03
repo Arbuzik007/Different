@@ -48,18 +48,21 @@
 
 		mixarr(hsh)
 
-
-		let pushe = document.getElementById('push');
+//--------------------------------------------------------------------------------//
 		
-
 		// let deletee = document.getElementById('delete');
 		// let delete_btn = document.getElementById('delete_btn');
 
-		var new_push = hsh.push(pushe);
-		let push_btn = document.getElementById('push_btn').addEventListener('click', new_push);
+		let pushe = document.getElementById('push').value;
 
-		mixarr(hsh)
+		let pushshsh = [];
+
+		var new_push = pushshsh.push(pushe);
+
+		let push_btn = document.getElementById('push_btn').addEventListener('click', new_push);
 		
+		document.write('Добавить ' + new_push + ' в перемешиватель?');
+
 	</script>
 </body>
-</html>                   
+</html>
