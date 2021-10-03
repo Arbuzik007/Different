@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		#div {
+			display: flex;
+			border: 1px solid black;
+			width: 400px;
+			min-height: 100px;
+			padding: 15px;
+		}
+		#btn {
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+		#push{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="div"></div>
+
+	<!-- <button id="btn" onclick="mixarr(arr)">Перемешать</button><br> -->
+
+	<input id="push" type="text" name="">
+	<button id="push_btn">Добавить</button><br>
+
+	<input id="delete" type="text" name="">
+	<button id="delete_btn">Удалить</button>
+
+	<script type="text/javascript">
+		let div = document.getElementById('div');
+		let btn = document.getElementById('btn');
+
+		let hsh = ['#gamedev ', '#indiedev ', '#gamedevelopment ', '#gaming ', '#indiegame ', '#games ', '#gameart ', '#game ', '#indiegamedev ', '#art ', '#videogames ', '#gamer ', '#unity ', '#gamedesign ', '#unity3d ', '#indiegames ', '#android ', '#programming ', '#coding ', '#developer ', '#madewithunity ', '#graphicdesign ', '#gamers ', '#mobilegame ', '#videogame ', '#design ', '#usa ','#illustration ', '#3d ', '#digitalart'];
+
+		let a;
+
+		function mixarr(arr){
+   			a = arr.map(i=>[Math.random(), i]).sort().map(i=>i[1]);
+   			div.innerHTML = a;
+		}
+
+		mixarr(hsh)
+
+
+		let pushe = document.getElementById('push');
+		
+
+		// let deletee = document.getElementById('delete');
+		// let delete_btn = document.getElementById('delete_btn');
+
+		var new_push = hsh.push(pushe);
+		let push_btn = document.getElementById('push_btn').addEventListener('click', new_push);
+
+		mixarr(hsh)
+		
+	</script>
+</body>
+</html>                   
